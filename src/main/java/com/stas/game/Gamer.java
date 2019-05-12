@@ -72,7 +72,6 @@ public class Gamer {
                 move(sc.nextLine());
                 b = false;
             } catch (Exception e) {
-                e.printStackTrace();
                 System.err.println("Введите корректные координаты");
                 b = true;
             }
