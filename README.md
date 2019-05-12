@@ -7,6 +7,6 @@ cd CheckMate
 
 mvn package
 
-Запуск проекта из консоли
+Запуск проекта из консоли :
 
 java -jar target\CheckMate-1.0-SNAPSHOT.jar
