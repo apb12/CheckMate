@@ -43,14 +43,14 @@ public class Gamer {
         String to = s.split("-", 2)[1].toLowerCase();
         Position a = new Position(Interpritator.reverseInter(from).get(0), Interpritator.reverseInter(from).get(1));
         Position b = new Position(Interpritator.reverseInter(to).get(0), Interpritator.reverseInter(to).get(1));
-        if (validAction(a, b, Figure::aviableEat) && checkGamerColor(Field.getInstance().getFigure(a.getX(), a.getY()))) {
-            eatFigure(a, b);
-        } else if (validAction(a, b, Figure::aviableMove) && checkGamerColor(Field.getInstance().getFigure(a.getX(), a.getY()))) {
-            moveFigure(a, b);
-        } else {
+//        if (validAction(a, b, Figure::aviableEat) && checkGamerColor(Field.getInstance().getFigure(a.getX(), a.getY()))) {
+//            eatFigure(a, b);
+//        } else if (validAction(a, b, Figure::aviableMove) && checkGamerColor(Field.getInstance().getFigure(a.getX(), a.getY()))) {
+//            moveFigure(a, b);
+//        } else {
             throw new Exception();
         }
-    }
+   // }
 
     /**
      * Метод,реализующий замкнутый цикл,до тех пор,пока не будут введены корректные координаты ,произойдет ход/битье фигуры и

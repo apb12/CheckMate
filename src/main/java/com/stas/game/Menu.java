@@ -53,9 +53,9 @@ public class Menu {
                 String s = sc1.nextLine();
                 int tempX = Interpritator.reverseInter(s).get(0);
                 int tempY = Interpritator.reverseInter(s).get(1);
-                out.println("Для фигуры " + Field.getInstance().getFigure(tempX, tempY).getName());
-                Printer.printPosition(Field.getInstance().getFigure(tempX, tempY).aviableMove());
-                Printer.printEat(Field.getInstance().getFigure(tempX, tempY).aviableEat());
+//                out.println("Для фигуры " + Field.getInstance().getFigure(tempX, tempY).getName());
+//                Printer.printPosition(Field.getInstance().getFigure(tempX, tempY).aviableMove());
+//                Printer.printEat(Field.getInstance().getFigure(tempX, tempY).aviableEat());
                 b = false;
             } catch (Exception e) {
                 err.println("неверная координата,повторите ввод");

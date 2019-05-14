@@ -16,8 +16,8 @@ public class Rook extends Figure {
 
     private String ch = "Л";
 
-    Rook(String name, int x, int y, String color) {
-        super(name, x, y, color);
+    Rook(String name,Position p, String color) {
+        super(name,p, color);
     }
 
     @Override
@@ -87,5 +87,17 @@ public class Rook extends Figure {
         }
         return positionList;
     }
+//    public List<Figure>listMove(){
+//        for (int i = 1; i <= 7; i++) {
+//            if ((x + i) <= 7 && f[x + i][y] != null && getColor().equals(f[x + i][y].getColor())) {
+//                break;
+//            }
+//            if ((x + i) <= 7 && f[x + i][y] != null && !getColor().equals(f[x + i][y].getColor())) {
+//                positionList.add(new Position((x + i), y));
+//                break;
+//            }
+//        }
+
+   // }
 }
 

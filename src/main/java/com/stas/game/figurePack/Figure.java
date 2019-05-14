@@ -13,8 +13,18 @@ public abstract class Figure {
     protected Figure[][] f = Field.getInstance().getFiguresTable();
     protected int x, y;
     private String ch;
-    private String name;
-    private String color;
+    protected String name;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    protected String color;
+    public Position p;
 
     public String getCh() {
         return ch;
@@ -43,10 +53,9 @@ public abstract class Figure {
     public Figure() {
     }
 
-    public Figure(String name, int x, int y, String color) {
+    public Figure(String name, Position p, String color) {
 
-        this.x = x;
-        this.y = y;
+        this.p=p;
         this.color = color;
         this.name = name;
     }

@@ -16,8 +16,8 @@ public class Knight extends Figure {
 
     private String ch = "K";
 
-    Knight(String name, int x, int y, String color) {
-        super(name, x, y, color);
+    Knight(String name,Position p, String color) {
+        super(name,p, color);
     }
 
     public List<Position> aviableMove() {
